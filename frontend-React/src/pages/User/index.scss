@@ -1,0 +1,109 @@
+// user update info form
+.user-info-form {
+
+    .header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info-form {
+        margin-top: 25px;
+
+        .form-row {
+            display: flex;
+            justify-content: center;
+            width: 340px;
+
+
+            .user-form-item {
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                .ant-form-item-label {
+                    display: inline-block;
+                    width: 100px;
+                    text-align: right;
+                }
+
+                .form-input {
+                    width: 230px;
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+}
+
+// user avatar form 
+.user-avatar-form {
+
+    .header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .rounded-image {
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 2px dashed grey;
+        width: 282px;
+        height: 282px;
+        display: block;
+
+        .image-preview {
+            width: 278px;
+            height: 278px;
+            display: block;
+        }
+    }
+
+}
+
+// user reset password form
+.user-reset-form {
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 1px;
+
+    .header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .password-form {
+        width: 450px;
+        margin-top: 25px;
+
+        .form-row {
+            display: flex;
+            justify-content: center;
+            width: 410px;
+
+            .form-item {
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                .ant-form-item-label {
+                    display: inline-block;
+                    width: 170px;
+                    text-align: right;
+                }
+            }
+
+            .form-input {
+                width: 230px;
+                margin-left: 2px;
+            }
+        }
+    }
+
+}

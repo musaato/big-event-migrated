@@ -1,0 +1,43 @@
+.login-page {
+    height: 100vh;
+    background-color: #fff;
+
+    .bg {
+        background: url('../../assets/logo2.png') no-repeat 60% center / 240px auto,
+            url('../../assets/login_bg.jpg') no-repeat center / cover;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .login-page-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        user-select: none;
+    }
+}
+
+.sign-in-form-row {
+
+    .sign-in-form-item {
+
+        // this is antD class
+        .ant-form-item-label {
+            display: inline-block;
+            width: 85px;
+            text-align: right;
+        }
+    }
+
+}
+
+.sign-up-form-row {
+
+    .sign-up-form-item {
+
+        .ant-form-item-label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+    }
+}

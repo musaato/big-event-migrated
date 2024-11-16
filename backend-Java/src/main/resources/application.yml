@@ -1,0 +1,23 @@
+# application.yml
+# don't forget key:(space)value, e.g. username:(space)root
+# 2. set mybatis configuration
+#
+# "data:" block stores  redis config parameters
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/big_event
+    username: root
+    password: s20230621
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+
+# Enable conversion of underscore "create_time" "update_time" in DB to User Class attributes "createTime" and "updateTime"
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+

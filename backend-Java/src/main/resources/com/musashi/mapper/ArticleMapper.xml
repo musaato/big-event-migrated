@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--  Note: ArticleMapper.xml and ArticleMapper.java interface must have same name
+            and same path under "java" and "resources" folder-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.musashi.mapper.ArticleMapper">
+<!--    dynamic sql statement, "id=list" = "ArticleMapper.list()"-->
+<!--    "where" clause using if tag will be enabled depending on receiving or not-->
+<!--    "categoryId"  same as parameter in ArticleMapper list()-->
+<!--    "and status=#{status}" will add this clause to sql-->
+<!--    userId exists in token without a doubt,and(add) to sql-->
+    <select id="list" resultType="com.musashi.pojo.Article">
+        select * from article
+        <where>
+            <if test="categoryId!=null">
+                category_id=#{categoryId}
+            </if>
+            <if test="status!=null">
+                and status=#{status}
+            </if>
+             and create_user=#{userId}
+        </where>
+    </select>
+</mapper>

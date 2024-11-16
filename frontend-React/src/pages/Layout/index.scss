@@ -1,0 +1,47 @@
+// layout scss
+.layout-container {
+    height: 100vh; 
+}
+
+.header {
+    border-bottom: 1px solid grey;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-div {
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 120px;
+    background: url('~@/assets/logo.png') no-repeat center / 120px auto;
+}
+
+.layout-content {
+    overflow-y: auto;
+}
+
+.user-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 20px;
+    color: #fff;
+
+    .user-name {
+        margin-right: 20px;
+    }
+
+    .user-logout {
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+
+.ant-layout-header {
+    padding: 0 !important;
+}
